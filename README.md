@@ -1,28 +1,32 @@
-### Multicast Market Data Feed Handler
-A personal educational project developing a low-latency FPGA Ethernet/UDP feed handler for market data ingestion and trading simulation.
+### swiftGreeks
+A personal educational project developing a low-latency FPGA Ethernet feed handler and an FPGA hardware accelerator, benchmarking against an embedded C++ baseline for the calculation of Black-Scholes options greeks from raw market data.
 
 > **Note:** This project uses the Zybo Z7’s 100 Mbps Ethernet for demonstration and testing. In production HFT systems, feed handlers run at 10–100 Gbps, but the underlying packet parsing, multicast handling, and FPGA pipeline design principles remain largely the same and this platform suffices for educational purposes.
 
 **Tools Used**
 
-*This project is being developed for the Zybo Z7 SoC and its onboard FPGA, the Zynq-7020.*
+*This project is being developed for the Zybo Z7 SoC and its onboard FPGA, comparable to the Xilinx Artix-7 series FPGA.*
 
 `Xilinx Vivado`
-`SystemVerilog`
 `Questa/ModelSim`
-`Visual Studio Code`
-`Git`
+`cocotb`
+`SystemVerilog`
+`C++`
 
 ---
 
 #### **File Structure**
 
-`/src` –> Main SystemVerilog code for FPGA-side modules\
-`/tb` –> Testbenches for verifying that each module works as intended
+`/src` -> Main C++ code for websockets implementation, serialization on the software-side, and the embedded software on the ARM\
+`/hdl` –> Main SystemVerilog code for FPGA-side modules\
+`/tb` –> cocotb testbenches for verifying that each module works as intended\
+`/docs` -> Additional documentation, including high-level block diagrams
 
 ---
 
 #### **Learning Objectives**
+
+> **Note:** This section needs to be updated.
 
 - **Ethernet Communication** – understand frame structure, MAC/IP/UDP parsing
 - **Real-time Data Handling** – process high-speed streaming market data with minimal latency
