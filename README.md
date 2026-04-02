@@ -12,6 +12,7 @@ A personal educational project developing a low-latency FPGA Ethernet feed handl
 `cocotb`
 `SystemVerilog`
 `C++`
+`Python`
 
 ---
 
@@ -20,13 +21,11 @@ A personal educational project developing a low-latency FPGA Ethernet feed handl
 `/src` -> Main C++ code for websockets, serialization, and embedded software on the ARM\
 `/hdl` –> Main SystemVerilog code for FPGA-side modules\
 `/tb` –> cocotb testbenches for verifying that each module works as intended\
-`/docs` -> Additional documentation, including high-level block diagrams
+`/docs` -> Additional documentation, including high-level block diagrams and ADRs
 
 ---
 
 #### **Learning Objectives**
-
-> **Note:** This section needs to be updated.
 
 - **Ethernet Communication** – understand frame structure, MAC/IP/UDP parsing
 - **Real-time Data Handling** – process high-speed streaming market data with minimal latency
