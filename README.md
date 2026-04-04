@@ -34,6 +34,6 @@ A personal educational project developing a low-latency FPGA Ethernet feed handl
 - **Protocol Parsing** – implement packet-level state machines
 - **AXI-Stream / FPGA Pipelines** – integrate MAC output to custom RTL logic, interface between onboard ARM and FPGA
 - **Sequence Number & Data Integrity Handling** – detect gaps, out-of-order packets, and malformed frames
-- **CORDIC** – implement transcendental functions in synthesizable RTL for hardware-accelerated Black-Scholes pricing
+- **CORDIC** – implement transcendental functions in synthesizable RTL for hardware-accelerated calculations
 - **cocotb Verification** – write Python-based hardware testbenches for complex protocol logic
 - **Hardware/Software Co-design** – benchmark ARM C++ baseline against FPGA accelerator using AXI-Lite
