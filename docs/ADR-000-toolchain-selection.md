@@ -16,6 +16,5 @@ I may still switch to Verilator for simulation, but in the interests of minimizi
 *Andy Chiem; 4/2/2026*
 
 ---
-\
 *Update -- 4/3/2026*\
 Switched from Questa to Verilator for simulation, and development moved to a WSL remote distro where cocotb integrates more cleanly with Verilator. GTKWave will be the new waveform viewer as it works natively in WSL and is much more lightweight given that the only role of Questa would have been viewing .vcd files. GTKWave more than suffices for the time being. Also advances the goal of using as many fully open-source tools as possible.
