@@ -12,28 +12,6 @@ module parser (
     output  logic packet_end
 );
 
-
-/* ETHERNET FRAME STRUCTURE 
-
-ERROR
--->
-IDLE:
-Preamble: 7 bytes of 0x55
-SFD (Start Frame Delimiter): 1 byte of 0xD5
-
-READ_ETH
-Destination MAC: 6 bytes
-Source MAC: 6 bytes
-EtherType: 2 bytes
-
-IP Header: 20 bytes, or IHL*4           // READ_IP
-UDP Header: 8 bytes                     // READ_UDP
-Payload: Data being transmitted         // PAYLOAD
-
-tlast -> assert packet_end and transition back to IDLE
-
-*/
-
 typedef enum logic [2:0] {
     IDLE,
     READ_ETH,

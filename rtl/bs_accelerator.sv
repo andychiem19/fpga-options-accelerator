@@ -12,3 +12,5 @@ module bs_accelerator (
     output logic [31:0] rho,
     output logic        result_valid
 );
+
+endmodule
